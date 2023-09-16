@@ -1,10 +1,9 @@
+import 'package:firebase_app/domain/blocs/counter_bloc/counter_bloc.dart';
+import 'package:firebase_app/domain/blocs/products_list_bloc/products_list_bloc.dart';
+import 'package:firebase_app/domain/repositories/products_repository.dart';
+import 'package:firebase_app/presentation/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:simpe_state_management/domain/blocs/products_list_bloc/products_list_bloc.dart';
-import 'package:simpe_state_management/domain/blocs/counter_bloc/counter_bloc.dart';
-import 'package:simpe_state_management/domain/repositories/products_repository.dart';
-
-import 'package:simpe_state_management/presentation/widgets/product_card.dart';
 
 late CounterInCartBloc bloc;
 

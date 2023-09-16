@@ -1,6 +1,6 @@
+import 'package:firebase_app/app/theme.dart';
+import 'package:firebase_app/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:simpe_state_management/app/theme.dart';
-import 'package:simpe_state_management/presentation/pages/home_page.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

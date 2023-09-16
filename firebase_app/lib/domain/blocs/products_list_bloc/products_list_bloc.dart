@@ -1,6 +1,6 @@
+import 'package:firebase_app/domain/models/products_list.dart';
+import 'package:firebase_app/domain/repositories/products_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:simpe_state_management/domain/models/products_list.dart';
-import 'package:simpe_state_management/domain/repositories/products_repository.dart';
 
 part 'products_list_event.dart';
 part 'products_list_state.dart';
