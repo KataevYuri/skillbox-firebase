@@ -4,7 +4,7 @@ final lightTheme = ThemeData(
   useMaterial3: true,
   appBarTheme: const AppBarTheme(
     elevation: 0,
-    backgroundColor: Color.fromARGB(255, 69, 0, 71),
+    backgroundColor: Color.fromARGB(255, 90, 72, 255),
     titleTextStyle: TextStyle(
       color: Colors.white,
       fontSize: 20,
