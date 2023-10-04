@@ -1,4 +1,5 @@
 import 'package:firebase_app/app/theme.dart';
+import 'package:firebase_app/presentation/pages/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -32,26 +33,20 @@ class _LoginWithGoogleState extends State<LoginWithGoogle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Google Authorization'),
-      ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [Text('User : $userEmail')],
-          ),
+        appBar: AppBar(
+          title: const Text('Google Authorization'),
         ),
-        ElevatedButton(
-            onPressed: () async {
-              await signInWithGoogle();
-              setState(() {});
-            },
-            child: const Text('Login')),
-        ElevatedButton(onPressed: () {}, child: const Text('Logout')),
-      ]),
-    );
+        body: StreamBuilder<User?>(
+          stream: FirebaseAuth.instance.userChanges(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData) {
+              return ElevatedButton(
+                  onPressed: signInWithGoogle, child: Text('Login'));
+            } else {
+              return const HomePage();
+            }
+          },
+        ));
   }
 
   Future<UserCredential> signInWithGoogle() async {
@@ -69,6 +64,7 @@ class _LoginWithGoogleState extends State<LoginWithGoogle> {
     );
 
     userEmail = googleUser!.email;
+    debugPrint(userEmail);
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }

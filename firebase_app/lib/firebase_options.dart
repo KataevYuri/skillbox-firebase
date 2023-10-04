@@ -23,9 +23,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -44,39 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAZX19Z0q-0n8RXMU7QTGMiKZePCGJ4S2U',
-    appId: '1:475857463300:web:5d7a932c2c3f063f2fad51',
-    messagingSenderId: '475857463300',
-    projectId: 'skillbox-lab',
-    authDomain: 'skillbox-lab.firebaseapp.com',
-    storageBucket: 'skillbox-lab.appspot.com',
+    apiKey: 'AIzaSyAJbOhnql1UQa3-NuJPNM_dxi0IqgJEsdc',
+    appId: '1:9487195428:web:8ef8a50da975774291e7b1',
+    messagingSenderId: '9487195428',
+    projectId: 'lab17-f27f8',
+    authDomain: 'lab17-f27f8.firebaseapp.com',
+    storageBucket: 'lab17-f27f8.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAXXdaNbWofyecIz21AaZNbExOifhtDc64',
-    appId: '1:475857463300:android:74f4877cdc119f6c2fad51',
-    messagingSenderId: '475857463300',
-    projectId: 'skillbox-lab',
-    storageBucket: 'skillbox-lab.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAsc94vXqEIY6f1mEQvrNKdjd06VMZTkpc',
-    appId: '1:475857463300:ios:8bfd26795fbca7922fad51',
-    messagingSenderId: '475857463300',
-    projectId: 'skillbox-lab',
-    storageBucket: 'skillbox-lab.appspot.com',
-    iosClientId: '475857463300-g2cv0e8otbngdb6urp1tbvl4k06k4d6m.apps.googleusercontent.com',
-    iosBundleId: 'com.example.firebaseApp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAsc94vXqEIY6f1mEQvrNKdjd06VMZTkpc',
-    appId: '1:475857463300:ios:b4c1766f21ee96282fad51',
-    messagingSenderId: '475857463300',
-    projectId: 'skillbox-lab',
-    storageBucket: 'skillbox-lab.appspot.com',
-    iosClientId: '475857463300-bc9kmo4qrj59v8rhf2ht2699989ie39d.apps.googleusercontent.com',
-    iosBundleId: 'com.example.firebaseApp.RunnerTests',
+    apiKey: 'AIzaSyAMRnJf_fY13lFhZHvK3WNb9tLeI8Tk2CU',
+    appId: '1:9487195428:android:d3b7d33c960b609c91e7b1',
+    messagingSenderId: '9487195428',
+    projectId: 'lab17-f27f8',
+    storageBucket: 'lab17-f27f8.appspot.com',
   );
 }

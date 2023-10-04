@@ -1,43 +1,26 @@
 {
   "project_info": {
-    "project_number": "475857463300",
-    "project_id": "skillbox-lab",
-    "storage_bucket": "skillbox-lab.appspot.com"
+    "project_number": "9487195428",
+    "project_id": "lab17-f27f8",
+    "storage_bucket": "lab17-f27f8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:475857463300:android:74f4877cdc119f6c2fad51",
+        "mobilesdk_app_id": "1:9487195428:android:d3b7d33c960b609c91e7b1",
         "android_client_info": {
           "package_name": "com.example.firebase_app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "475857463300-ts0lj9rpm80k6kpkopsibvr09fj7r6n8.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAXXdaNbWofyecIz21AaZNbExOifhtDc64"
+          "current_key": "AIzaSyAMRnJf_fY13lFhZHvK3WNb9tLeI8Tk2CU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "475857463300-ts0lj9rpm80k6kpkopsibvr09fj7r6n8.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "475857463300-bc9kmo4qrj59v8rhf2ht2699989ie39d.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.firebaseApp.RunnerTests"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
